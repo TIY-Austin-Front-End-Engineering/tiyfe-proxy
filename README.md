@@ -1,36 +1,15 @@
-# node-js-getting-started
+# Proxy server
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+This is a simple proxy server that allows you to sidestep CORS issues when trying to access externam APIs.
 
-This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+### Instructions
 
-## Running Locally
+Make all of your requests to http://tiyfe-proxy.herokuapp.com/&lt;a urlencoded version of the API you want to query&gt;.
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+### Example usage
 
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
+If you want to query the following API endpoint: http://growstuff.org/plantings.json ...
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+Query the following URL instead: http://tiyfe-proxy.herokuapp.com/http%3A%2F%2Fgrowstuff.org%2Fplantings.json
 
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+To get the urlencoded version of your API (the piece you put after the slash) you can use [URL Decoder/Encoder](http://meyerweb.com/eric/tools/dencoder/)
