@@ -4,7 +4,7 @@ This is a simple proxy server that allows you to sidestep CORS issues when tryin
 
 ### Instructions
 
-Make all of your requests to http://tiyfe-proxy.herokuapp.com/[a urlencoded version of the API you want to query].
+Make all of your requests to http://tiyfe-proxy.herokuapp.com/a-urlencoded-version-of-the-API-you-want-to-query
 
 ### Example usage
 
