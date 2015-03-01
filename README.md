@@ -1,10 +1,10 @@
 # Proxy server
 
-This is a simple proxy server that allows you to sidestep CORS issues when trying to access externam APIs.
+This is a simple proxy server that allows you to sidestep CORS issues when trying to access external APIs.
 
 ### Instructions
 
-Make all of your requests to http://tiyfe-proxy.herokuapp.com/&lt;a urlencoded version of the API you want to query&gt;.
+Make all of your requests to http://tiyfe-proxy.herokuapp.com/[a urlencoded version of the API you want to query].
 
 ### Example usage
 
